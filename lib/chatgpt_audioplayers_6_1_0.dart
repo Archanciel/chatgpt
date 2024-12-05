@@ -99,11 +99,11 @@ class AudioPlayerViewModel extends ChangeNotifier {
       playNextFile(); // Automatically play the next file
     });
 
-    _playerStateChangeSubscription =
-        _audioPlayer.onPlayerStateChanged.listen((state) {
-      _playerState = state;
-      notifyListeners();
-    });
+    // _playerStateChangeSubscription =
+    //     _audioPlayer.onPlayerStateChanged.listen((state) {
+    //   _playerState = state;
+    //   notifyListeners();
+    // });
   }
 
   @override
