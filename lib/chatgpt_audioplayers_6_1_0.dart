@@ -7,11 +7,12 @@ import 'dart:async';
 import 'package:path/path.dart' as path;
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/foundation.dart';
 import 'services/permission_requester_service.dart';
 
 import 'constants.dart' as chatgpt_constants;
 
+/// With modifying Battery Android option with Non restricted value, playing next
+/// audio even if screen is off works.
 class AudioPlayerViewModel extends ChangeNotifier {
   final AudioPlayer _audioPlayer;
   PlayerState? _playerState;
